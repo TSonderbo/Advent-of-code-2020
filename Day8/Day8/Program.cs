@@ -8,7 +8,7 @@ namespace Day8
     {
         static void Main(string[] args)
         {
-            string values = File.ReadAllText(@"C:\Repos\C#\Advent-of-code-2020\Day8\Day8\input.txt");
+            string values = File.ReadAllText(@"input.txt");
             string[] instructions = values.Split(new[] { "\n" }, StringSplitOptions.RemoveEmptyEntries);
 
             int index = 0;
@@ -78,7 +78,7 @@ namespace Day8
                     index = 0;
                     instructionChanged = false;
                     instructionIndexes.Clear();
-                    Console.WriteLine("Resetting.. Size of jmp indexes: " + nopIndexes.Count);
+                    Console.WriteLine("Resetting.. Size of jmp indexes: " + jmpIndexes.Count);
                 }
                 instructionIndexes.Add(index);
 
